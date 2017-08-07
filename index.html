@@ -257,8 +257,7 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>#docker安装</p>
-<h2 id="1-ubuntu14-04-5-环境"><a href="#1-ubuntu14-04-5-环境" class="headerlink" title="1.ubuntu14.04.5 环境"></a>1.ubuntu14.04.5 环境</h2><p>apt-get install docker.io<br>或安装社区版 <a href="https://download.docker.com/linux/ubuntu/dists/trusty/pool/stable/amd64/docker-ce_17.03.2~ce-0~ubuntu-trusty_amd64.deb" target="_blank" rel="external">https://download.docker.com/linux/ubuntu/dists/trusty/pool/stable/amd64/docker-ce_17.03.2~ce-0~ubuntu-trusty_amd64.deb</a></p>
+        <h1 id="docker安装"><a href="#docker安装" class="headerlink" title="docker安装"></a>docker安装</h1><h2 id="1-ubuntu14-04-5-环境"><a href="#1-ubuntu14-04-5-环境" class="headerlink" title="1.ubuntu14.04.5 环境"></a>1.ubuntu14.04.5 环境</h2><p>apt-get install docker.io<br>或安装社区版 <a href="https://download.docker.com/linux/ubuntu/dists/trusty/pool/stable/amd64/docker-ce_17.03.2~ce-0~ubuntu-trusty_amd64.deb" target="_blank" rel="external">https://download.docker.com/linux/ubuntu/dists/trusty/pool/stable/amd64/docker-ce_17.03.2~ce-0~ubuntu-trusty_amd64.deb</a></p>
 <ol>
 <li>Description-en<br>Linux container runtime<br>Docker complements kernel namespacing with a high-level API which operates at the process level. It runs unix processes with strong guarantees of isolation and repeatability across servers.  </li>
 </ol>
@@ -270,7 +269,24 @@
 <p>在window下面安装docker，docker的守候进程和容器是运行在linux虚拟机里面，docker命令则是运行在windows系统里面。</p>
 <p>Docker主机的地址是linux虚拟机的地址，它被启动的时候，会分到一个ip地址。当你启动一个容器的时候，容器的端口号会映射到虚拟机的一个端口号。</p>
 <p>Windows Architecture Diagram</p>
-
+<h2 id="3-docker命令使用"><a href="#3-docker命令使用" class="headerlink" title="3.docker命令使用"></a>3.docker命令使用</h2><ul>
+<li>docker tag设置镜像标签</li>
+</ul>
+<pre><code>root@806RTH:~# docker tag --help
+Usage:  docker tag SOURCE_IMAGE[:TAG] TARGET_IMAGE[:TAG]
+Create a tag TARGET_IMAGE that refers to SOURCE_IMAGE
+Options:
+--help   Print usage
+</code></pre><p>注意： <strong> source_image格式为： <font color="red">username/repository name<font> </font></font></strong></p>
+<pre><code>root@806RTH:~# docker images
+REPOSITORY          TAG                               IMAGE ID            CREATED             SIZE
+local               ubuntu14.04_chameleon_build_env   ed9ebadb41c9        2 days ago          714 MB
+root@806RTH:~# docker image tag ed9ebadb41c9  local/ubuntu:ubuntu14.04_chameleon_build_env
+root@806RTH:~# docker images
+REPOSITORY          TAG                               IMAGE ID            CREATED             SIZE
+local/ubuntu        ubuntu14.04_chameleon_build_env   ed9ebadb41c9        2 days ago          714 MB
+local               ubuntu14.04_chameleon_build_env   ed9ebadb41c9        2 days ago          714 MB
+</code></pre>
       
 
       
@@ -1104,11 +1120,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">hexo</a>
+                <a href="javascript:void(0)" class="js-tag color3">工具</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">工具</a>
+                <a href="javascript:void(0)" class="js-tag color5">hexo</a>
               </li>
              
               <li class="article-tag-list-item">
