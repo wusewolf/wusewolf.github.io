@@ -46,7 +46,7 @@
 			<img src="https://avatars0.githubusercontent.com/u/6873086?v=3&amp;s=400" class="js-avatar">
 		</a>
 		<hgroup>
-		  <h1 class="header-author"><a href="/">Jackson</a></h1>
+		  <h1 class="header-author"><a href="/">wusewolf</a></h1>
 		</hgroup>
 		
 		<p class="header-subtitle">A journey of a thousand miles begins with a single step.</p>
@@ -102,7 +102,7 @@
 				<img src="https://avatars0.githubusercontent.com/u/6873086?v=3&amp;s=400" class="js-avatar">
 			</div>
 			<hgroup>
-			  <h1 class="header-author js-header-author">Jackson</h1>
+			  <h1 class="header-author js-header-author">wusewolf</h1>
 			</hgroup>
 			
 			<p class="header-subtitle"><i class="icon icon-quo-left"></i>A journey of a thousand miles begins with a single step.<i class="icon icon-quo-right"></i></p>
@@ -149,6 +149,188 @@
           </div>
           <div id="js-content" class="content-ll">
             
+  
+    <article id="post-technology/2017-08-13 I2C Slave addressing" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/08/13/technology/2017-08-13 I2C Slave addressing/">i2c-slave-addressing</a>
+    </h1>
+  
+
+        
+        <a href="/2017/08/13/technology/2017-08-13 I2C Slave addressing/" class="archive-article-date">
+  	<time datetime="2017-08-13T09:55:11.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-08-13</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <ul>
+<li>i2c-slave-addressing<br><a href="https://www.totalphase.com/support/articles/200349176-7-bit-8-bit-and-10-bit-i2c-slave-addressing" target="_blank" rel="external">7-bit-8-bit-and-10-bit-i2c-slave-addressing</a></li>
+</ul>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">I2C</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/技术/" class="article-tag-list-link color3">技术</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2017/08/13/technology/2017-08-13 I2C Slave addressing/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-technology/2017-08-12 processes running in background" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/08/12/technology/2017-08-12 processes running in background/">让进程在后台可靠运行的几种方法</a>
+    </h1>
+  
+
+        
+        <a href="/2017/08/12/technology/2017-08-12 processes running in background/" class="archive-article-date">
+  	<time datetime="2017-08-12T06:55:11.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-08-12</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p><strong> 让进程在后台可靠运行的几种方法—总结 </strong></p>
+<h2 id="nohup-setsid-amp"><a href="#nohup-setsid-amp" class="headerlink" title="nohup/setsid/&amp;"></a>nohup/setsid/&amp;</h2><ol>
+<li>nohup ping www.ibm.com &amp;</li>
+<li>setsid ping www.ibm.com</li>
+<li>(ping www.ibm.com &amp;) </li>
+</ol>
+<h2 id="disown对已经运行的进程来控制"><a href="#disown对已经运行的进程来控制" class="headerlink" title="disown对已经运行的进程来控制"></a>disown对已经运行的进程来控制</h2><ul>
+<li>用disown -h jobspec来使某个作业忽略HUP信号。  </li>
+<li>用disown -ah 来使所有的作业都忽略HUP信号。   </li>
+<li>用disown -rh 来使正在运行的作业忽略HUP信号。</li>
+</ul>
+<h2 id="参考链接Linux-技巧：让进程在后台可靠运行的几种方法"><a href="#参考链接Linux-技巧：让进程在后台可靠运行的几种方法" class="headerlink" title="参考链接Linux 技巧：让进程在后台可靠运行的几种方法"></a>参考链接<a href="https://www.ibm.com/developerworks/cn/linux/l-cn-nohup/" target="_blank" rel="external">Linux 技巧：让进程在后台可靠运行的几种方法</a></h2>
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">Linux</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/技术/" class="article-tag-list-link color3">技术</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2017/08/12/technology/2017-08-12 processes running in background/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
   
     <article id="post-technology/2017-08-05 tools" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
@@ -829,188 +1011,6 @@ local               ubuntu14.04_chameleon_build_env   ed9ebadb41c9        2 days
 
 
   
-    <article id="post-technology/2015-12-20-use-ssh-efficiently" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2015/12/30/technology/2015-12-20-use-ssh-efficiently/">SSH高效使用</a>
-    </h1>
-  
-
-        
-        <a href="/2015/12/30/technology/2015-12-20-use-ssh-efficiently/" class="archive-article-date">
-  	<time datetime="2015-12-30T09:33:11.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2015-12-30</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>##SSH-高效使用SSH的秘籍</p>
-<ul>
-<li><a href="http://os.51cto.com/art/201303/383290.htm" target="_blank" rel="external">16条高效使用SSH的秘籍</a></li>
-<li>ssh -t, ssh端口转发，lrzsz, screen, sshpass工具使用</li>
-</ul>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">SSH</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/技术/" class="article-tag-list-link color3">技术</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2015/12/30/technology/2015-12-20-use-ssh-efficiently/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-technology/hexo npm install" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2015/12/13/technology/hexo npm install/">hexo,npm 入坑记</a>
-    </h1>
-  
-
-        
-        <a href="/2015/12/13/technology/hexo npm install/" class="archive-article-date">
-  	<time datetime="2015-12-13T09:55:11.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2015-12-13</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="hexo-npm-入坑记"><a href="#hexo-npm-入坑记" class="headerlink" title="hexo,npm 入坑记"></a>hexo,npm 入坑记</h1><p>###安装Hexo遇到npm的问题<br>安装Hexo，提示错误：</p>
-<p>sh: 1: node: Permission denied<br>具体如下：         </p>
-<ul>
-<li><a href="&quot;2343&quot;">http://www.cnblogs.com/lidonghao/p/3543747.html</a>  </li>
-</ul>
-<p>###个人学习之使用Hexo &amp; Github,搭建属于自己的博客</p>
-<ul>
-<li><a href="">https://segmentfault.com/a/1190000006749038</a></li>
-</ul>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">hexo</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/技术/" class="article-tag-list-link color3">技术</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2015/12/13/technology/hexo npm install/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
   
     <nav id="page-nav">
       <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/">Next &raquo;</a>
@@ -1025,7 +1025,7 @@ local               ubuntu14.04_chameleon_build_env   ed9ebadb41c9        2 days
   <div class="outer">
     <div id="footer-info">
     	<div class="footer-left">
-    		&copy; 2017 Jackson
+    		&copy; 2017 wusewolf
     	</div>
       	<div class="footer-right">
       		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
@@ -1124,7 +1124,15 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">I2C</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">hexo</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">Linux</a>
               </li>
              
               <li class="article-tag-list-item">
