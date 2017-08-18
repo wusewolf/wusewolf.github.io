@@ -150,102 +150,6 @@
           <div id="js-content" class="content-ll">
             
   
-    <article id="post-technology/pxe/2017-08-18 diskless client boot-PXE" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/08/18/technology/pxe/2017-08-18 diskless client boot-PXE/">Linux pxe servers构建方法推荐(centos7)</a>
-    </h1>
-  
-
-        
-        <a href="/2017/08/18/technology/pxe/2017-08-18 diskless client boot-PXE/" class="archive-article-date">
-  	<time datetime="2017-08-18T06:55:11.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-08-18</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="Linux-recommended-pxe-server-build-steps"><a href="#Linux-recommended-pxe-server-build-steps" class="headerlink" title="Linux recommended pxe server build steps"></a>Linux recommended pxe server build steps</h2><ul>
-<li><p><strong>Recommended method:</strong> <a href="https://www.server-world.info/en/note?os=CentOS_7&amp;p=pxe&amp;f=4" target="_blank" rel="external">simple steps to build PXE server with centos7</a></p>
-</li>
-<li><p>PXE Client boot flowsheet:  <strong>kernel(dhcp,tftp)-&gt;initramfs(tftp)-&gt;nfsroot(nfs)</strong></p>
-</li>
-</ul>
-<h2 id="Some-tips"><a href="#Some-tips" class="headerlink" title="Some tips"></a>Some tips</h2><ol>
-<li>copy kernel from host</li>
-<li>build your custom initramfs with dracut tools </li>
-<li>use yum groups and [fe]debootstrap to install rootfs files </li>
-<li>avoid typing erros</li>
-</ol>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">PXE</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/技术/" class="article-tag-list-link color3">技术</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/08/18/technology/pxe/2017-08-18 diskless client boot-PXE/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
     <article id="post-technology/pxe/2017-08-18 diskless client boot-Linux PXE" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -313,6 +217,91 @@
       
         <p class="article-more-link">
           <a class="article-more-a" href="/2017/08/18/technology/pxe/2017-08-18 diskless client boot-Linux PXE/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-technology/pxe/2017-08-18 samba configuration on ubuntu16.04" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/08/17/technology/pxe/2017-08-18 samba configuration on ubuntu16.04/">Linux samba server配置方法记录(ubuntu16.04)</a>
+    </h1>
+  
+
+        
+        <a href="/2017/08/17/technology/pxe/2017-08-18 samba configuration on ubuntu16.04/" class="archive-article-date">
+  	<time datetime="2017-08-17T06:55:11.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-08-17</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="Linux-samba-servers配置方法记录"><a href="#Linux-samba-servers配置方法记录" class="headerlink" title="Linux samba servers配置方法记录"></a>Linux samba servers配置方法记录</h1><p><a href="https://www.server-world.info/en/note?os=Ubuntu_16.04&amp;p=samba&amp;f=1" target="_blank" rel="external">Linux samba servers配置方法记录</a><br>各种server配置方法(推荐^_^)： <a href="https://www.server-world.info/en/" target="_blank" rel="external">https://www.server-world.info/en/</a></p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">samba</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/技术/" class="article-tag-list-link color3">技术</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2017/08/17/technology/pxe/2017-08-18 samba configuration on ubuntu16.04/">展开全文 >></a>
         </p>
       
 
@@ -1165,6 +1154,10 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">PXE</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">samba</a>
               </li>
             
             <div class="clearfix"></div>

@@ -6,20 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Linux pxe servers构建方法推荐(centos7) | wusewolf&#39;s blog</title>
+  <title>Linux samba server配置方法记录(ubuntu16.04) | wusewolf&#39;s blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Linux recommended pxe server build steps Recommended method: simple steps to build PXE server with centos7  PXE Client boot flowsheet:  kernel(dhcp,tftp)-&amp;gt;initramfs(tftp)-&amp;gt;nfsroot(nfs)   Some ti">
-<meta name="keywords" content="PXE">
+  <meta name="description" content="Linux samba servers配置方法记录Linux samba servers配置方法记录各种server配置方法(推荐^_^)： https://www.server-world.info/en/">
+<meta name="keywords" content="samba">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Linux pxe servers构建方法推荐(centos7)">
-<meta property="og:url" content="http://yoursite.com/2017/08/18/technology/pxe/2017-08-18 diskless client boot-PXE/index.html">
+<meta property="og:title" content="Linux samba server配置方法记录(ubuntu16.04)">
+<meta property="og:url" content="http://yoursite.com/2017/08/17/technology/pxe/2017-08-18 samba configuration on ubuntu16.04/index.html">
 <meta property="og:site_name" content="wusewolf&#39;s blog">
-<meta property="og:description" content="Linux recommended pxe server build steps Recommended method: simple steps to build PXE server with centos7  PXE Client boot flowsheet:  kernel(dhcp,tftp)-&amp;gt;initramfs(tftp)-&amp;gt;nfsroot(nfs)   Some ti">
+<meta property="og:description" content="Linux samba servers配置方法记录Linux samba servers配置方法记录各种server配置方法(推荐^_^)： https://www.server-world.info/en/">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-08-18T03:30:48.750Z">
+<meta property="og:updated_time" content="2017-08-18T04:48:28.694Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Linux pxe servers构建方法推荐(centos7)">
-<meta name="twitter:description" content="Linux recommended pxe server build steps Recommended method: simple steps to build PXE server with centos7  PXE Client boot flowsheet:  kernel(dhcp,tftp)-&amp;gt;initramfs(tftp)-&amp;gt;nfsroot(nfs)   Some ti">
+<meta name="twitter:title" content="Linux samba server配置方法记录(ubuntu16.04)">
+<meta name="twitter:description" content="Linux samba servers配置方法记录Linux samba servers配置方法记录各种server配置方法(推荐^_^)： https://www.server-world.info/en/">
   
     <link rel="alternative" href="/atom.xml" title="wusewolf&#39;s blog" type="application/atom+xml">
   
@@ -153,38 +153,27 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-technology/pxe/2017-08-18 diskless client boot-PXE" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-technology/pxe/2017-08-18 samba configuration on ubuntu16.04" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      Linux pxe servers构建方法推荐(centos7)
+      Linux samba server配置方法记录(ubuntu16.04)
     </h1>
   
 
         
-        <a href="/2017/08/18/technology/pxe/2017-08-18 diskless client boot-PXE/" class="archive-article-date">
-  	<time datetime="2017-08-18T06:55:11.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-08-18</time>
+        <a href="/2017/08/17/technology/pxe/2017-08-18 samba configuration on ubuntu16.04/" class="archive-article-date">
+  	<time datetime="2017-08-17T06:55:11.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-08-17</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="Linux-recommended-pxe-server-build-steps"><a href="#Linux-recommended-pxe-server-build-steps" class="headerlink" title="Linux recommended pxe server build steps"></a>Linux recommended pxe server build steps</h2><ul>
-<li><p><strong>Recommended method:</strong> <a href="https://www.server-world.info/en/note?os=CentOS_7&amp;p=pxe&amp;f=4" target="_blank" rel="external">simple steps to build PXE server with centos7</a></p>
-</li>
-<li><p>PXE Client boot flowsheet:  <strong>kernel(dhcp,tftp)-&gt;initramfs(tftp)-&gt;nfsroot(nfs)</strong></p>
-</li>
-</ul>
-<h2 id="Some-tips"><a href="#Some-tips" class="headerlink" title="Some tips"></a>Some tips</h2><ol>
-<li>copy kernel from host</li>
-<li>build your custom initramfs with dracut tools </li>
-<li>use yum groups and [fe]debootstrap to install rootfs files </li>
-<li>avoid typing erros</li>
-</ol>
+        <h1 id="Linux-samba-servers配置方法记录"><a href="#Linux-samba-servers配置方法记录" class="headerlink" title="Linux samba servers配置方法记录"></a>Linux samba servers配置方法记录</h1><p><a href="https://www.server-world.info/en/note?os=Ubuntu_16.04&amp;p=samba&amp;f=1" target="_blank" rel="external">Linux samba servers配置方法记录</a><br>各种server配置方法(推荐^_^)： <a href="https://www.server-world.info/en/" target="_blank" rel="external">https://www.server-world.info/en/</a></p>
 
       
 
@@ -198,7 +187,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">PXE</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">samba</a>
         		</li>
       		
 		</ul>
@@ -265,7 +254,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="http://s.jiathis.com/qrcode.php?url=http://yoursite.com/2017/08/18/technology/pxe/2017-08-18 diskless client boot-PXE/" alt="微信分享二维码">
+      <img src="http://s.jiathis.com/qrcode.php?url=http://yoursite.com/2017/08/17/technology/pxe/2017-08-18 samba configuration on ubuntu16.04/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -279,9 +268,18 @@
   
 <nav id="article-nav">
   
+    <a href="/2017/08/18/technology/pxe/2017-08-18 diskless client boot-Linux PXE/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          Linux pxe servers构建方法推荐(centos7)
+        
+      </div>
+    </a>
   
-    <a href="/2017/08/18/technology/pxe/2017-08-18 diskless client boot-Linux PXE/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">Linux pxe servers构建方法推荐(centos7)</div>
+  
+    <a href="/2017/08/16/technology/pxe/2017-08-16 pxe servers on windows/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Windows pxe servers推荐</div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -434,6 +432,10 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">PXE</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">samba</a>
               </li>
             
             <div class="clearfix"></div>
